@@ -1,0 +1,10 @@
+3:
+Should bogus actions be able to corrupt the environment? 
+- Bogus actions has the capability to halt progress in the environment, thereby rendering the program useless.
+
+Change the REFLEX_VACUUM_AGENT to return bogus actions, such as Left when should go Right, etc. Run the agent. 
+Do the Actuators allow bogus actions?
+- If we return bogus actions, as suggested, the agent will never leave its current space.
+Hereby it will never come into contact with the rest of the environment (other spaces).
+This makes it impossible for the agent to fulfill its function on the environment.
+So yes, they do allow bogus actions, but it will hinder agent progress

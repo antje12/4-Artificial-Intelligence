@@ -1,0 +1,17 @@
+Greedy best search - Solution path:
+State: K - Depth: 3
+State: H - Depth: 2
+State: D - Depth: 1
+State: A - Depth: 0
+
+A* search - Solution path:
+State: L - Depth: 3
+State: H - Depth: 2
+State: D - Depth: 1
+State: A - Depth: 0
+
+Compare the solution paths:
+As can be seen there are 2 different solution paths.
+The 2 paths diverge on the last step, where the goal node is selected.
+- The greedy best fist algorithm selected K as the goal node, which is more expensive to reach, since the travel distance from H to K is 6.
+- The A* algorithm selected L as the goal node, which is cheaper to reach, since the travel distance from H to L is only 5.

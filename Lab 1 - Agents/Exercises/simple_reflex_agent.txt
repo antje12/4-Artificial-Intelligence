@@ -1,0 +1,9 @@
+3:
+Change the SIMPLE_REFLEX_AGENT condition-action rules to return bogus actions, 
+such as Left when should go Right, or Crash, etc. 
+Rerun the agent. 
+Do the Actuators allow bogus actions?
+- If we return bogus actions, as suggested, the agent will never leave its current space.
+Hereby it will never come into contact with the rest of the environment (other spaces).
+This makes it impossible for the agent to fulfill its function on the environment.
+So yes, they do allow bogus actions, but it will hinder agent progress

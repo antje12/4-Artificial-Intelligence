@@ -1,0 +1,18 @@
+1. What is the branching factor at depth 0? At depth 1?
+- At depth 0 the branching factor is 9
+- At depth 1 the branching factor is 8
+
+2. What is the maximal depth?
+- The max depth is when the complete board is full, which is after 9 moves
+
+3. Will a MIN move attempt to minimize or maximize the utility?
+- Min move will minimize the utility
+
+4. Are states after a terminal state explored?
+- At a terminal state we stop exploring
+
+5. Are all possible states explored to a terminal state?
+- Yes, unless we use Aplha-Beta pruning
+
+6. Is this a depth first or breadth first search? How do you know? (see Python code)
+- This is a depth first search.

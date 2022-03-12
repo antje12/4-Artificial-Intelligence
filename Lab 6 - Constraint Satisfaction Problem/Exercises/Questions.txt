@@ -1,0 +1,46 @@
+See the attached file constraints.py, it contains a Python program to solve constraint satisfaction problems
+1. What is returned by create_australia_csp()
+- The problem definition consisting of:
+-- The variables (X)
+-- The domain for each variable (D)
+-- The arcs between the variables
+-- The constraint function (C)
+
+2. What is returned by backtracking_search()
+- The function returns the solution, i.e. 
+A complete assignment that satisfies all constraints:
+-- NSW: Blue
+-- NT: Blue
+-- Q: Red
+-- SA: Green
+-- T: Red
+-- V: Red
+-- WA: Red
+
+3. What is the purpose of assignment variable?
+- The assignment variable contains 
+the dictionary of domain values currently assigned to variables
+- We can add or remove assignments to this collection
+- The assignments that have been set to the variables
+
+4. What is the purpose of variable variable?
+- The variable variable is the next variable that we want to assign a value to i.e. 
+This is a variable that is not yet in the assignment collection
+
+5. What is the purpose of the following statement?
+	for value in self.order_domain_values(variable, assignment)
+- For each possible value in the domain i.e.
+For each color that can be set on the variable
+
+6. What would the following do?
+	if self.is_consistent('Q': 'Red', 'NT': 'Blue', 'NSW': 'Green'):
+		assignment[variable] = value
+- Hvis farven i value ikke bryder consistency bliver den sat på vores variabel
+- I dette tilfælde får vi en fejl!
+-- Hvis Q = Red, NT = Blue, og NSW = Green, så vil vi ikke kunne farve SA
+
+7. What would then assignment be?
+- assignment would stay unchanged
+
+8. What is the effect of del assignment[variable]
+- We remove an assignmen that has been set to a variable

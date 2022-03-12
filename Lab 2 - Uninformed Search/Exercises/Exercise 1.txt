@@ -1,0 +1,37 @@
+Obs! We assume we always read from the front of the list!
+
+1.
+Successor nodes are inserted at front of the fringe (successor list) as a node is expanded. 
+Is this a breadth (FIFO) or depth first search (LIFO)?
+- This would result in a depth-first search (LIFO)
+
+2.
+For goal J, give the fringe (successor list) after expanding each node.
+A: B,C
+B: D,E,C
+D: E,C
+E: C
+C: F,G
+F: G
+G: H,I,J
+H: I,J
+I: J
+J: -
+
+3.
+What is the effect of inserting successor nodes at the end of the fringe as a node is expanded? 
+A depth or breadth first search?
+- It is breadth-first search (FIFO)
+
+4.
+For goal J, give the fringe (successor list) after expanding each node.
+A: B,C
+B: C,D,E
+C: D,E,F,G
+D: E,F,G
+E: F,G
+F: G
+G: H,I,J
+H: I,J
+I: J
+J: -

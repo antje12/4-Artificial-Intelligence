@@ -1,0 +1,13 @@
+2: The result was:
+- None     [('A', 'Clean'), ('A', 'Dirty'), ('B', 'Clean'), ('B', 'Clean')]
+The table did not contain a case for the percept sequence:
+- ('A', 'Clean'), ('A', 'Dirty'), ('B', 'Clean'), ('B', 'Clean')
+Which is why it gets the default output "None"
+
+3: If we only look at the current percept, we would only require 4 table entries:
+- ((A, "Dirty"),): "Clean"
+- ((A, "Clean"),): "Right"
+- ((B, "Dirty"),): "Clean"
+- ((B, "Clean"),): "Left"
+
+4: If we keep the history table, it would have to contain 4^T table entries for an agent lifetime og T steps.
